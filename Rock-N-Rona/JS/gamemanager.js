@@ -6,24 +6,25 @@ let GameManager = {
     resetPlayer: function(classType) {
         switch (classType) {
             case "Thee Duck":
-                player = new Player(classType, 888, 100, 0, 700, 500, 500, 100);
+                player = new Player(classType, 888, 100, 0, 700, 500, 100, 500);
                 break;
 
             case "The Buccalo":
-                player = new Player(classType, 888, 500, 0, 200, 500, 500, 100);
+                player = new Player(classType, 888, 100, 0, 700, 500, 100, 500);
                 break;
 
             case "Duke":
-                player = new Player(classType, 888, 100, 0, 500, 500, 500, 100);
+                player = new Player(classType, 888, 100, 0, 700, 500, 100, 500);
                 break;
 
             case "MaDuke":
-                player = new Player(classType, 888, 100, 0, 1000, 500, 200, 250);
+                player = new Player(classType, 888, 100, 0, 700, 500, 100, 500);
                 break;
 
             case "Hakk":
-                player = new Player(classType, 888, 100, 0, 300, 1000, 500, 100);
+                player = new Player(classType, 888, 100, 0, 700, 500, 100, 500);
                 break;
+                
         }
 
        let getInterface = document.querySelector(".interface");
@@ -35,7 +36,7 @@ let GameManager = {
             let getActions = document.querySelector(".actions");
             let getArena = document.querySelector(".arena");
             getHeader.innerHTML = '<p>Task: Prepare for Combat!</p>';
-            getActions.innerHTML = '<a href="#" class="btn-prefight" onclick="GameManager.setFight()">Your enemy approaches! Click here to reveal them!</a>';
+            getActions.innerHTML = '<a href="#" class="btn-prefight" onclick="GameManager.setFight()">Face your fears!  Your enemy approaches!</a>';
             getArena.style.visibility = "visible";
             
     
@@ -47,8 +48,8 @@ let GameManager = {
             let getActions = document.querySelector(".actions");
             let getEnemy = document.querySelector(".enemy");
             // Create enemy!
-            let enemy00 = new Enemy("Mahl", 1500, 100, 500, 500, 500, 200, 500, 500);
-            let enemy01 = new Enemy("Time Bomb Timmy", 1750, 200, 500, 50, 100, 100, 500, 500);
+            let enemy00 = new Enemy("Mahl", 1000, 100, 500, 500, 500, 200, 500, 500);
+            let enemy01 = new Enemy("Time Bomb Timmy", 1000, 200, 500, 50, 100, 400, 500, 500);
             let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(2));
 
             console.log(chooseRandomEnemy);
@@ -63,7 +64,7 @@ let GameManager = {
             }
      
             getHeader.innerHTML = '<p>Rock N Rona!</p>';
-            getActions.innerHTML = '<a href= "#" class="btn-prefight" onclick="PlayerMoves.calcAttack()">Click Here to Attack! There is no honor in losing!</a>';
+            getActions.innerHTML = '<a href= "#" class="btn-prefight" onclick="PlayerMoves.calcAttack()">Click Here to Attack! For the Buffalo Gods!</a>';
             getEnemy.innerHTML = '<img src="Rock-N-Rona/Resources/Enemies/' + enemy.enemyType.toLowerCase() + '.png" class = "img-avatar"><div> <h3>' + enemy.enemyType + '</h3><p class="health-enemy">Health: ' + enemy.health + '</p><p>Steal AC!: ' + enemy.stealAC + ' </p><p>Run Good: ' + enemy.runGood + '</p><p>Scream Reeder: ' + enemy.screamReeder + '</p><p>What did you say, Zakk!?: ' + enemy.whatDidYouSayZakk + '</p><p>Body Blows: ' + enemy.bodyBlows + '</p><p>Speed: ' + enemy.speed + '</p></div>';
     
         },
