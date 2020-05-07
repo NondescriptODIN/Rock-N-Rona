@@ -67,7 +67,7 @@ img {
     
   width: 100%;
   height: 100%;
-  background-color: #0067c7; background-image: url("/Users/nondescript/Desktop/Rock-N-Rona/Resources/Arena/arena-bg.png"); background-position: center; background-repeat: repeat; background-size: 35vh;
+  background-color: #0067c7; background-image: url("Rock-N-Rona/Resources/Arena/arena-bg.png"); background-position: center; background-repeat: repeat; background-size: 35vh;
   visibility: hidden;
   }
   .enemy {
