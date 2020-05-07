@@ -28,7 +28,7 @@ let GameManager = {
         }
 
        let getInterface = document.querySelector(".interface");
-          getInterface.innerHTML = '<img src="Rock-N-Rona/Resources/Players/' + classType.toLowerCase() + '.png" class = "img-avatar"><div> <h3>' + classType + '</h3><p class="health-player">Health: ' + player.health + '</p><p>Buffalo Squirt: ' + player.buffaloSquirt + ' </p><p>Run Good: ' + player.runGood + '</p><p>Bounce Back: ' + player.bounceBack + '</p><p>Neck Crank: ' + player.neckCrank + '</p><p>Body Blows: ' + player.bodyBlows + '</p><p>Speed: ' + player.speed + '</p></div>';
+          getInterface.innerHTML = '<img src="Rock-N-Rona/Resources/Players/' + classType + '.png" class = "img-avatar"><div> <h3>' + classType + '</h3><p class="health-player">Health: ' + player.health + '</p><p>Buffalo Squirt: ' + player.buffaloSquirt + ' </p><p>Run Good: ' + player.runGood + '</p><p>Bounce Back: ' + player.bounceBack + '</p><p>Neck Crank: ' + player.neckCrank + '</p><p>Body Blows: ' + player.bodyBlows + '</p><p>Speed: ' + player.speed + '</p></div>';
          },
 
         setPreFight: function() {
@@ -65,7 +65,7 @@ let GameManager = {
      
             getHeader.innerHTML = '<p>Rock N Rona!</p>';
             getActions.innerHTML = '<a href= "#" class="btn-prefight" onclick="PlayerMoves.calcAttack()">Click Here to Attack! For the Buffalo Gods!</a>';
-            getEnemy.innerHTML = '<img src="Rock-N-Rona/Resources/Enemies/' + enemy.enemyType.toLowerCase() + '.png" class = "img-avatar"><div> <h3>' + enemy.enemyType + '</h3><p class="health-enemy">Health: ' + enemy.health + '</p><p>Steal AC!: ' + enemy.stealAC + ' </p><p>Run Good: ' + enemy.runGood + '</p><p>Scream Reeder: ' + enemy.screamReeder + '</p><p>What did you say, Zakk!?: ' + enemy.whatDidYouSayZakk + '</p><p>Body Blows: ' + enemy.bodyBlows + '</p><p>Speed: ' + enemy.speed + '</p></div>';
+            getEnemy.innerHTML = '<img src="Rock-N-Rona/Resources/Enemies/' + enemy.enemyType + '.png" class = "img-avatar"><div> <h3>' + enemy.enemyType + '</h3><p class="health-enemy">Health: ' + enemy.health + '</p><p>Steal AC!: ' + enemy.stealAC + ' </p><p>Run Good: ' + enemy.runGood + '</p><p>Scream Reeder: ' + enemy.screamReeder + '</p><p>What did you say, Zakk!?: ' + enemy.whatDidYouSayZakk + '</p><p>Body Blows: ' + enemy.bodyBlows + '</p><p>Speed: ' + enemy.speed + '</p></div>';
     
         },
         
