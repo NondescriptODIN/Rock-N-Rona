@@ -3,26 +3,26 @@ let GameManager = {
         this.resetPlayer(classType);
         this.setPreFight();
     },
-    resetPlayer: function(classType) {
+   resetPlayer: function(classType) {
         switch (classType) {
             case "Thee Duck":
-                player = new Player(classType, 700, 100, 0, 700, 500, 100, 500);
+                player = new Player(classType, 888, 100, 0, 700, 500, 100, 500);
                 break;
 
             case "The Buccalo":
-                player = new Player(classType, 700, 999, 0, 700, 500, 100, 500);
+                player = new Player(classType, 888, 100, 0, 700, 500, 100, 500);
                 break;
 
             case "Duke":
-                player = new Player(classType, 700, 100, 0, 700, 500, 100, 500);
+                player = new Player(classType, 888, 100, 0, 700, 500, 100, 500);
                 break;
 
             case "MaDuke":
-                player = new Player(classType, 700, 100, 0, 700, 500, 100, 500);
+                player = new Player(classType, 888, 100, 0, 700, 500, 100, 500);
                 break;
 
             case "Hakk":
-                player = new Player(classType, 700, 100, 0, 700, 500, 100, 500);
+                player = new Player(classType, 888, 100, 0, 700, 500, 100, 500);
                 break;
                 
         }
@@ -48,8 +48,8 @@ let GameManager = {
             let getActions = document.querySelector(".actions");
             let getEnemy = document.querySelector(".enemy");
             // Create enemy!
-            let enemy00 = new Enemy("Mahl", 666, 50, 0, 200, 500, 200, 500, 500);
-            let enemy01 = new Enemy("Time Bomb Timmy", 666, 200, 500, 50, 200, 400, 500, 500);
+            let enemy00 = new Enemy("Mahl", 1000, 100, 500, 500, 500, 200, 500, 500);
+            let enemy01 = new Enemy("Time Bomb Timmy", 1000, 200, 500, 50, 100, 400, 500, 500);
             let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(2));
 
             console.log(chooseRandomEnemy);
