@@ -36,9 +36,9 @@ let PlayerMoves = {
      let enemyAttack = function() {
         let calcBaseDamage;
         if (enemy.runGood >= 0) {
-            calcBaseDamage = enemy.whatDidYouSayZakk * enemy.runGood / 9000;
+            calcBaseDamage = enemy.whatDidYouSayZakk * enemy.runGood / 5000;
         } else {
-            calcBaseDamage = enemy.screamReeder * enemy.stealAC / 9000;
+            calcBaseDamage = enemy.screamReeder * enemy.stealAC / 5000;
         }
         let offsetDamage = Math.floor(Math.random() * Math.floor(10));
         let calcOutputDamage = calcBaseDamage + offsetDamage;
