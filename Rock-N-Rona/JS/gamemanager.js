@@ -36,7 +36,7 @@ let GameManager = {
             let getActions = document.querySelector(".actions");
             let getArena = document.querySelector(".arena");
             getHeader.innerHTML = '<p>Task: Prepare for Combat!</p>';
-            getActions.innerHTML = '<a href="#" class="btn-prefight" onclick="GameManager.setFight()">Face your fears!  Your enemy approaches!</a>';
+            getActions.innerHTML = '<a href="#" class="btn-prefight" onclick="GameManager.setFight()">Click here to face your fears!  Your enemy approaches!</a>';
             getArena.style.visibility = "visible";
             
     
